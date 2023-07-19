@@ -1,29 +1,16 @@
-import { useState } from 'react';
+import { FormComponent } from './FormComponent';
+import { Content } from './Content';
 import logo from './logo.svg';
 import './App.css';
+import './fonts.css';
 
 function App() {
-  
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-
-  return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
+  return(
+    <div className="signup-form-component container">
+      <Content />
+      <FormComponent />
     </div>
   );
 }
 
-function MyButton({count, onClick}) {
- return(
-    <button onClick={onClick}>
-      Clicked {count} times
-      </button>
- );
-}
 export default App;
