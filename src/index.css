@@ -40,12 +40,27 @@ body, input {
 
 .signup-form {
   background: white;
-  border-radius: 10px; 
+  border-radius: 6px; 
+  padding: 10px;
+}
+
+.signup-form input {
+    width: 262px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+    border: 1px solid var(--netural-color-grayish-blue);
+    border-radius: 5px;
+    padding: 12px 11px;
+    margin: 0 auto;
+    display: block;
 }
 
 .signup-form-footer {
   color: var(--netural-color-grayish-blue);
   text-align: center;
+  font-size: 10px;
+  padding: 10px 38px;
 }
 
 @media(max-width: 767px){
