@@ -8,7 +8,7 @@ export function Content() {
                 See how experienced developers solve problems in real-time. 
                 Watching scripted tutorials is great, but understanding how developers think is invaluable.
             </p>
-            <p className="signup-form-offer"><strong>Try it for free 7 days</strong> then $20/mo. thereafter</p>
+            <p className="signup-form-offer-mobile"><strong>Try it for free 7 days</strong> then $20/mo. thereafter</p>
         </div>
 
     );
