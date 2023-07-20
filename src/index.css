@@ -30,6 +30,18 @@ body, input, button {
   font-size: 16px;
 }
 
+.error {
+  font-size: 12px;
+  font-family: var(--font-family);
+  color: var(--primary-color-red);
+  display: block;
+  text-align: end;
+  padding: 0 15px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
 .signup-form-title {
   font-size: 41px;
   line-height: 48px;
