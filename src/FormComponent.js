@@ -28,7 +28,8 @@ export function FormComponent() {
                       placeholder={error ? " " : "First Name" }
                       style= {{ background: error ? `url('/static/media/icon-error.b72f792e9c900128f5c8.svg') 90% center no-repeat` : "none",
                                 border: error ? "2px solid hsl(0deg 100% 74% / 67%)" : "1px solid var(--netural-color-grayish-blue)"
-                             }}/>
+                              }}
+                      data-testid = "first-name"/>
             </p>
             {error ? <span className="error">First Name cannot be empty</span> : " "}       
             <p>
@@ -38,7 +39,8 @@ export function FormComponent() {
                        placeholder={error ? " " : "Last Name"} 
                        style= {{ background: error ? `url('/static/media/icon-error.b72f792e9c900128f5c8.svg') 90% center no-repeat` : "none",
                                  border: error ? "2px solid hsl(0deg 100% 74% / 67%)" : "1px solid var(--netural-color-grayish-blue)"
-                       }}/>
+                              }}
+                       data-testid = "last-name"/>
             </p>
             {error ? <span className="error">Last Name cannot be empty</span> : " "}
             <p>
@@ -50,7 +52,8 @@ export function FormComponent() {
                        style= {{ background: error ? `url('/static/media/icon-error.b72f792e9c900128f5c8.svg') 90% center no-repeat` : "none",
                                  border: error ? "2px solid hsl(0deg 100% 74% / 67%)" : "1px solid var(--netural-color-grayish-blue)",
                                  color: email ? "var(--primary-color-red)" : "black"
-                       }}/>
+                              }}
+                       data-testid = "email-address"/>
             </p>
             {error ? <span className="error">Looks like this is not an email</span> : " "}
             <p>
@@ -59,8 +62,9 @@ export function FormComponent() {
                        type="password" 
                        placeholder={error ? " " : "Password"}
                        style= {{ background: error ? `url('/static/media/icon-error.b72f792e9c900128f5c8.svg') 90% center no-repeat` : "none",
-                                border: error ? "2px solid hsl(0deg 100% 74% / 67%)" : "1px solid var(--netural-color-grayish-blue)"
-                              }}/>
+                                 border: error ? "2px solid hsl(0deg 100% 74% / 67%)" : "1px solid var(--netural-color-grayish-blue)"
+                               }}
+                       data-testid = "password"/>
             </p>
             {error ? <span className="error">Password cannot be empty</span> : " "}
             <button className="signup-form-button">CLAIM YOUR FREE TRAIL</button>
