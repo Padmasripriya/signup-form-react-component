@@ -133,7 +133,8 @@ body, input, button {
 
 @media(max-width: 767px){
   .container {
-    width: 325px;
+    /* width: 325px; */
+    padding: 0;
   }
 
   .signup-form-title {
@@ -170,9 +171,9 @@ body, input, button {
     display: none;
    }
 
-  .signup-form {
-    width: 305px;
-  }
+ /* .signup-form {
+     width: 305px; 
+  } */
 
   .signup-form-button {
     width: 95%;
